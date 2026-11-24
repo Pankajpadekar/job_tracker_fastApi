@@ -1,0 +1,15 @@
+[project]
+name = "Job-Tracker"
+version = "0.1.0"
+description = "Track my job applications"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.32.0",
+    "fastapi[standard]>=0.162.0",
+    "pydantic-settings>=2.0.0",
+    "sqlalchemy[asyncio]>=2.1.9",
+]
+
+[tool.fastapi]
+entrypoint = "app.main:app"
